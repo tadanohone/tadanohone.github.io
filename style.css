@@ -1,0 +1,12 @@
+body {
+    background-color: #6c2e7a;
+    text-align: center;
+}
+
+#main {
+    height: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    background: black;
+    color: #06db5d;
+}
