@@ -1,12 +1,12 @@
 html {
     font-size: 10px;
-    background-color: #00539F;
+    background-color: #047c1f;
   }
 
 body {
     width: 600px;
     margin: 0 auto;
-    background-color: #FF9500;
+    background-color: #c5f7d1;
     padding: 0 20px 20px 20px;
     border: 5px solid black;
 }
@@ -30,3 +30,200 @@ h1 {
     display: block;
     margin: 0 auto;
   }
+
+/* 落葉 */
+.box-wrapper {
+  position: relative;
+  max-width: 600px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.box {
+  width: 100%;
+  text-align: center;
+}
+
+.text {
+  padding: 20px;
+}
+
+.item {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 15px;
+  height: 20px;
+  margin: 0 auto;
+  border-radius: 0% 70%;
+  background: #914928;
+  opacity: 0;
+}
+
+.item--horizontal {
+  width: 20px;
+  height: 15px;
+}
+
+.item--color2 {
+  background: #ada137;
+}
+
+.item--color3 {
+  background: #44681e;
+}
+
+@keyframes fall {
+  from {
+    opacity: 0;
+    top: -50px;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 1;
+    top: 100vh;
+  }
+}
+
+@keyframes sway1 {
+  from {
+    transform: translate3d(0px, 0px, 0px) rotate(0deg);
+  }
+
+  25% {
+    transform: translate3d(-50px, 0px, 0px) rotate(-10deg);
+  }
+
+  75% {
+    transform: translate3d(50px, 0px, 0px) rotate(10deg);
+  }
+
+  to {
+    transform: translate3d(0px, 0px, 0px) rotate(0deg);
+  }
+}
+
+@keyframes sway2 {
+  from {
+    transform: translate3d(0px, 0px, 0px) rotate(0deg);
+  }
+
+  25% {
+    transform: translate3d(50px, 0px, 0px) rotate(10deg);
+  }
+
+  75% {
+    transform: translate3d(-50px, 0px, 0px) rotate(-10deg);
+  }
+
+  to {
+    transform: translate3d(0px, 0px, 0px) rotate(0deg);
+  }
+}
+
+@keyframes sway3 {
+  from {
+    transform: translate3d(0px, 0px, 0px) rotate(40deg);
+  }
+
+  25% {
+    transform: translate3d(50px, 0px, 0px) rotate(20deg);
+  }
+
+  75% {
+    transform: translate3d(-50px, 0px, 0px) rotate(-20deg);
+  }
+
+  to {
+    transform: translate3d(0px, 0px, 0px) rotate(0deg);
+  }
+}
+
+
+.js-scroll-fall.is-animated .item:nth-child(1) {
+  animation: fall 4s linear forwards, sway1 4s ease-in-out alternate;
+}
+
+.js-scroll-fall.is-animated .item:nth-child(2) {
+  left: 56%;
+  animation: fall 4s linear forwards, sway2 4s ease-in-out alternate;
+  animation-delay: 0.3s;
+}
+
+.js-scroll-fall.is-animated .item:nth-child(3) {
+  left: 40%;
+  transform: translate3d(0px, 0px, 0px) rotate(90deg);
+  animation: fall 4s linear forwards, sway1 4s ease-in-out alternate;
+  animation-delay: 0.5s;
+}
+
+.js-scroll-fall.is-animated .item:nth-child(4) {
+  left: 43.5%;
+  transform: translate3d(0px, 0px, 0px) rotate(120deg);
+  animation: fall 4s linear forwards, sway2 4s ease-in-out alternate;
+  animation-delay: 0.7s;
+}
+
+.js-scroll-fall.is-animated .item:nth-child(5) {
+  left: 54%;
+  transform: translate3d(0px, 0px, 0px) rotate(60deg);
+  animation: fall 4s linear forwards, sway1 4s ease-in-out alternate;
+  animation-delay: 0.9s;
+}
+
+.js-scroll-fall.is-animated .item:nth-child(6) {
+  left: 45%;
+  transform: translate3d(0px, 0px, 0px) rotate(30deg);
+  animation: fall 4s linear forwards, sway2 4s ease-in-out alternate;
+  animation-delay: 1s;
+}
+
+.js-scroll-fall.is-animated .item:nth-child(7) {
+  left: 50%;
+  transform: translate3d(0px, 0px, 0px) rotate(-65deg);
+  animation: fall 4s linear forwards, sway2 4s ease-in-out alternate;
+  /* animation-delay: 1s; */
+}
+
+.js-scroll-fall.is-animated .item:nth-child(8) {
+  left: 55%;
+  transform: translate3d(0px, 0px, 0px) rotate(40deg);
+  animation: fall 4s linear forwards, sway2 4s ease-in-out alternate;
+  animation-delay: 0.2s;
+}
+
+.js-scroll-fall.is-animated .item:nth-child(9) {
+  left: 70%;
+  transform: translate3d(0px, 0px, 0px) rotate(-30deg);
+  animation: fall 4s linear forwards, sway2 4s ease-in-out alternate;
+  animation-delay: 0.5s;
+}
+
+.js-scroll-fall.is-animated .item:nth-child(10) {
+  left: 65%;
+  transform: translate3d(0px, 0px, 0px) rotate(-135deg);
+  animation: fall 4s linear forwards, sway2 4s ease-in-out alternate;
+  animation-delay: 0.7s;
+}
+
+.js-scroll-fall.is-animated .item:nth-child(11) {
+  left: 60%;
+  transform: translate3d(0px, 0px, 0px) rotate(135deg);
+  animation: fall 4s linear forwards, sway3 4s ease-in-out alternate;
+  animation-delay: 0.9s;
+}
+
+.js-scroll-fall.is-animated .item:nth-child(12) {
+  left: 53%;
+  transform: translate3d(0px, 0px, 0px) rotate(-120deg);
+  animation: fall 4s linear forwards, sway1 4s ease-in-out alternate;
+  animation-delay: 0.8s;
+}
+
+.js-scroll-fall.is-animated .item:nth-child(13) {
+  left: 40%;
+}
