@@ -9,8 +9,8 @@ myImage.onclick = () => {
   }
 }
 
-let myButton = document.querySelector('button');
-let myHeading = document.querySelector('h1');
+let myButton = document.querySelector('.change-user');
+let myHeading = document.querySelector('.hello');
 
 function setUserName() {
     const myName = prompt('あなたの名前を入力してください。');
@@ -18,7 +18,7 @@ function setUserName() {
       setUserName();
     } else {
       localStorage.setItem('name', myName);
-      myHeading.textContent = `Mozilla はかっこいいよ、${myName}`;
+      myHeading.textContent = `ようこそ！、${myName}！`;
     }
   }
 
@@ -26,7 +26,7 @@ if (!localStorage.getItem('name')) {
     setUserName();
 } else {
     const storedName = localStorage.getItem('name');
-    myHeading.textContent = `Mozilla はかっこいいよ、${storedName}`;
+    myHeading.textContent = `ようこそ！、${storedName}！`;
 }
 
 myButton.onclick = () => {
