@@ -2,11 +2,14 @@ const myImage = document.querySelector('img');
 
 // 画像差し替え
 myImage.onclick = () => {
+  const n = Math.random()*100;
   const mySrc = myImage.getAttribute('src');
-  if (mySrc === 'images/firefox-icon.jpg') {
-    myImage.setAttribute('src','images/firefox-icon2.jpg');
+  if(n<8.10 && mySrc !== 'images/yaju.png') {
+    myImage.setAttribute('src','images/yaju.png');
+  } else if(mySrc !== 'images/urara.png') {
+    myImage.setAttribute('src','images/urara.png');
   } else {
-    myImage.setAttribute('src','images/firefox-icon.jpg');
+    myImage.setAttribute('src','images/urara2.png');
   }
 }
 

@@ -63,6 +63,7 @@ p, li {
 img {
   display: block;
   margin: 0 auto;
+  height: 200px;
 }
 
 /* サイト内リンク */
