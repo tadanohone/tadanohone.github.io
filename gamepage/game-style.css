@@ -48,7 +48,7 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 36px;
   color: #047c1f;
   text-decoration: underline;
 }
@@ -68,7 +68,12 @@ img {
 /* サイト内リンク */
 .pages {
     color: #c5f7d1;
-  }
+}
+
+/* ゲームリンク */
+.game-rink {
+  font-size: 26px;
+}
 
 /* 画面内アニメーション */
 .fadeUp {

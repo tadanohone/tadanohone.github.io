@@ -1,5 +1,6 @@
 const myImage = document.querySelector('img');
 
+// 画像差し替え
 myImage.onclick = () => {
   const mySrc = myImage.getAttribute('src');
   if (mySrc === 'images/firefox-icon.jpg') {
@@ -18,7 +19,7 @@ function setUserName() {
       setUserName();
     } else {
       localStorage.setItem('name', myName);
-      myHeading.textContent = `ようこそ！、${myName}！`;
+      myHeading.textContent = `ようこそ！${myName}様！`;
     }
   }
 
@@ -26,7 +27,7 @@ if (!localStorage.getItem('name')) {
     setUserName();
 } else {
     const storedName = localStorage.getItem('name');
-    myHeading.textContent = `ようこそ！${storedName}！`;
+    myHeading.textContent = `ようこそ！${storedName}様！`;
 }
 
 myButton.onclick = () => {
