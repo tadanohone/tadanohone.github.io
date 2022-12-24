@@ -1,3 +1,15 @@
+@media screen and(max-width: 480px){
+  img {
+    border: 0;
+  }
+}
+
+@media screen and(max-width: 1200px){
+  ing{
+    border: 1px solid red;
+  }
+}
+
 html {
     font-size: 10px;
     background-color: #047c1f;
@@ -26,6 +38,7 @@ nav {
   ul {
     display: flex;
   }
+  
   li {
     list-style: none;
   }

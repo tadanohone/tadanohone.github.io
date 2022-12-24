@@ -1,10 +1,22 @@
+@media screen and(max-width: 480px){
+  img {
+    border: 0;
+  }
+}
+
+@media screen and(max-width: 1200px){
+  ing{
+    border: 1px solid red;
+  }
+}
+
 html {
     font-size: 10px;
     background-color: #047c1f;
   }
 
 body {
-    width: 700px;
+    width: 70%;
     margin: 0 auto;
     background-color: #c5f7d1;
     padding: 50px 20px 20px 20px;
